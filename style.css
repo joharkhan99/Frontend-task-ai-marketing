@@ -1,0 +1,479 @@
+/*
+* mobile version/responsivness left little bit
+*/
+
+/* GENERAL */
+
+:root {
+  --primary-color: #13AE8D;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* NAVIGATION */
+
+.mob-items {
+  display: none;
+}
+
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin-bottom: 4px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.navbar-collapse .nav-item {
+  background: white;
+}
+
+.navbar-collapse .nav-item a.nav-link, .navbar-collapse .nav-item button {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  vertical-align: middle;
+  margin-right: 48px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar-collapse .nav-item a.nav-link.con {
+  opacity: 0.5;
+}
+
+.navbar-collapse .nav-item a.line {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-toggle i {
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 14px;
+  transition: .1s;
+}
+
+.navbar-brand span {
+  font-weight: 550;
+}
+
+.navbar-brand span:first-child {
+  color: var(--primary-color);
+}
+
+.navbar-brand span:last-child {
+  color: #3D3E3E;
+}
+
+.dropdown-menu {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  opacity: 0.98;
+  border: none;
+  padding: 20px 0px;
+  margin-top: 10px;
+}
+
+.dropdown-menu span, .dropdown-menu a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.dropdown-menu a:focus {
+  background: var(--primary-color);
+}
+
+.dropdown-menu span:hover {
+  background: none;
+}
+
+/* SECTION 1 */
+
+#sect1 {
+  margin-top: 200px;
+}
+
+#sect1 .col-md-6:first-child {
+  padding-left: 22px;
+}
+
+#sect1 .col-md-6 h1 span {
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 700;
+}
+
+#sect1 .col-md-4 {
+  display: none;
+}
+
+#sect1 .text-black {
+  color: #000;
+}
+
+#sect1 .col-md-6 h1 span:nth-child(even) {
+  color: var(--primary-color);
+}
+
+#sect1 .col-md-6 p {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+#sect1 .col-md-6 a {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--primary-color);
+  padding: 11px 12px 12px 11px;
+  display: inline-block;
+}
+
+#sect1 .col-md-6:last-child {
+  position: relative;
+}
+
+#sect1 .circle {
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  height: 129px;
+  width: 81.26px;
+  z-index: -1;
+}
+
+#sect1 .waves img {
+  position: absolute;
+  z-index: -1;
+  right: 0%;
+}
+
+#sect1 .waves img:nth-child(1) {
+  top: 14%;
+}
+
+#sect1 .waves img:nth-child(2) {
+  top: 18%;
+}
+
+#sect1 .waves img:nth-child(3) {
+  top: 22%;
+}
+
+#sect1 .waves img:nth-child(4) {
+  top: 26%;
+}
+
+#sect1 .waves img:nth-child(5) {
+  top: 30%;
+}
+
+#sect1 .waves img:nth-child(6) {
+  top: 34%;
+}
+
+#sect1 .waves img:nth-child(7) {
+  top: 38%;
+}
+
+#sect1 .waves img:nth-child(8) {
+  top: 42%;
+}
+
+#sect1 .waves img:nth-child(9) {
+  top: 46%;
+}
+
+#sect1 .waves img:nth-child(10) {
+  top: 50%;
+}
+
+#sect1 .waves img:nth-child(11) {
+  top: 54%;
+}
+
+#sect1 .waves img:nth-child(12) {
+  top: 58%;
+}
+
+#sect1 .waves img:nth-child(13) {
+  top: 62%;
+}
+
+.overlapping_circles {
+  transform: rotate(120deg);
+}
+
+.overlapping_circles div {
+  width: 400px;
+  height: 300px;
+  --i: 74px, #0000 75px;
+  background: radial-gradient(circle at 250px 50%, #ffffff var(--i)) 0 0/200px no-repeat, radial-gradient(circle at -50px 50%, #ffffff var(--i)) 100% 0/200px no-repeat, radial-gradient(circle, var(--primary-color) var(--i)) -50px, radial-gradient(circle, #3D3E3E var(--i)) 50px #ffffff;
+}
+
+/* SECTION 2 */
+
+#sect2 {
+  background-image: url('img/tech.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #06090F;
+  margin-top: 85px;
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+
+#sect2 h4 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.75;
+}
+
+#sect2 h2 {
+  margin-top: 34px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+#sect2 .award {
+  margin-top: 40px;
+}
+
+#sect2 .award img {
+  margin-right: 80px;
+}
+
+/* SECTION 3 */
+
+#sect3 {
+  margin-top: 88px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#sect3 h4 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: black;
+}
+
+#sect3 p {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #808080;
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+
+#sect3 p b {
+  color: black;
+}
+
+#sect3 .col-md-9 span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+}
+
+#sect3 .col-md-9 span a, #sect3 .ai a, #sect3 .datascience a, #sect3 .dataeng a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#sect3 .ai {
+  margin-top: 71px;
+}
+
+#sect3 .ai h5, #sect3 .datascience h5, #sect3 .dataeng h5 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+
+#sect3 .ai p, #sect3 .datascience p, #sect3 .dataeng p {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 12px;
+  margin-bottom: 21px;
+}
+
+#sect3 .circle img {
+  width: 100%;
+}
+
+#sect3 .ai .circle {
+  border-radius: 40% 60% 70% 30% / 50% 50% 60% 50%;
+  overflow: hidden;
+}
+
+#sect3 .datascience .circle {
+  border-radius: 10% 90% 30% 80% / 50% 50% 60% 50%;
+  overflow: hidden;
+}
+
+#sect3 .dataeng .circle {
+  border-radius: 40% 60% 70% 30% / 50% 50% 60% 50%;
+  overflow: hidden;
+}
+
+.light_circle {
+  position: absolute;
+  right: 0%;
+  top: 32.38%;
+}
+
+.light_circle2 {
+  position: absolute;
+  left: 0%;
+  top: 80%;
+}
+
+/* MEDIAS */
+
+@media (max-width: 992px) {
+  .navbar-collapse.collapsing .navbar-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -45%;
+    transition: all 0.2s ease;
+  }
+  .navbar-collapse.show .navbar-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+    background: var(--primary-color);
+    z-index: 10;
+    transition: left 0.15s ease;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-collapse .nav-item {
+    background: transparent;
+  }
+  .navbar-collapse .nav-item a.nav-link.con {
+    opacity: 1;
+  }
+  .dropdown-toggle .arrow {
+    display: none;
+  }
+  .nav-item .btn-group {
+    position: relative;
+    display: block;
+  }
+  .mob-items {
+    display: block;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .mob-items span {
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 4px;
+  }
+  .mob-items a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 4px;
+  }
+  #sect3 .light_circle, #sect3 .light_circle2 {
+    display: none;
+  }
+  .overlapping_circles {
+    display: none;
+  }
+  #sect1 .col-md-4 {
+    display: block;
+  }
+  #sect1 {
+    margin-top: 60px;
+  }
+  #sect1 .col-md-6 {
+    text-align: center;
+  }
+  #sect1 .col-md-6 h1 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+  #sect1 .circle {
+    top: 160%;
+  }
+  #sect1 .circle img {
+    width: 40% !important;
+  }
+  #sect2 .award img {
+    margin-right: 10px;
+    width: 100px;
+  }
+  #sect3 .row, #sect3 .row .col-md-3 {
+    margin-bottom: 20px;
+  }
+  #sect3 .row, #sect3 .row p, #sect3 .row a {
+    text-align: center;
+  }
+}
